@@ -1,0 +1,68 @@
+.page-hero{
+  padding:82px 0 34px;
+  background:linear-gradient(180deg, rgba(37,99,235,.10), transparent 60%);
+}
+.page-hero .bar{
+  height:14px; width:min(920px,92%);
+  background:linear-gradient(90deg, #16a34a, var(--blue));
+  border-radius:999px;
+  margin:0 auto 22px;
+}
+.page-hero h1{margin:16px 0 10px; font-size:clamp(32px,4vw,52px); letter-spacing:-.04em}
+.page-hero p{margin:0 auto; max-width:720px; color:var(--muted); font-weight:500}
+
+.case{
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:0;
+  border-radius:22px;
+  overflow:hidden;
+  margin:28px 0;
+}
+.case .media{background:#fff}
+.case .media img{width:100%; height:100%; object-fit:cover}
+.case .content{padding:26px; background:#fff}
+.tag{
+  display:inline-flex; padding:6px 10px; border-radius:999px;
+  font-size:11px; font-weight:800; color:#fff;
+  background:var(--blue);
+}
+.tag.purple{background:var(--purple)}
+.tag.orange{background:#f97316}
+.case h2{margin:10px 0 8px}
+.case h4{margin:12px 0 6px; font-size:13px}
+.case p{margin:0 0 10px; color:#475569; font-weight:600; font-size:13px}
+.results{
+  margin-top:14px;
+  border:1px solid rgba(148,163,184,.22);
+  border-radius:14px;
+  padding:14px;
+}
+.results .row{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; text-align:left}
+.metric b{display:block; font-size:20px; letter-spacing:-.02em}
+.metric span{font-size:12px; color:#64748b; font-weight:700}
+.track{
+  width:min(1160px,92%);
+  margin:40px auto 0;
+  padding:34px 18px;
+  border-radius:28px;
+  background:var(--grad);
+  color:#fff;
+  text-align:center;
+}
+.track .stats{margin-top:18px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+.track b{display:block; font-size:36px}
+.track span{font-weight:700; opacity:.9; font-size:12px}
+.soft-cta{
+  width:min(1160px,92%);
+  margin:20px auto 0;
+  padding:38px 18px;
+  border-radius:22px;
+  background:rgba(124,58,237,.06);
+  border:1px solid rgba(148,163,184,.22);
+  text-align:center;
+}
+@media(max-width:920px){
+  .case{grid-template-columns:1fr}
+  .results .row{grid-template-columns:1fr}
+  .track .stats{grid-template-columns:repeat(2,1fr)}
+}

@@ -1,0 +1,56 @@
+.page-hero{
+  padding:82px 0 34px;
+  background:linear-gradient(180deg, rgba(124,58,237,.10), transparent 60%);
+}
+.page-hero h1{margin:16px 0 10px; font-size:clamp(32px,4vw,52px); letter-spacing:-.04em}
+.page-hero p{margin:0 auto; max-width:760px; color:var(--muted); font-weight:500}
+
+.contact-wrap{
+  margin-top:40px;
+  display:grid; grid-template-columns: .9fr 1.3fr;
+  gap:20px;
+  align-items:start;
+}
+.info{
+  padding:24px;
+  border-radius:18px;
+  border:1px solid rgba(37,99,235,.25);
+  background:rgba(37,99,235,.05);
+}
+.info h3{margin:0 0 14px}
+.info-item{display:flex; gap:12px; padding:12px 0; border-bottom:1px solid rgba(148,163,184,.18)}
+.info-item:last-child{border-bottom:none}
+.ico{
+  width:36px;height:36px;border-radius:12px;background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-weight:900; font-size:13px;
+}
+.info-item b{display:block; font-size:13px}
+.info-item span{display:block; color:#475569; font-weight:700; font-size:13px; margin-top:2px}
+.small{margin-top:16px; color:#475569; font-weight:700; font-size:13px}
+
+.form{
+  padding:24px;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid rgba(148,163,184,.22);
+  box-shadow:var(--shadow);
+}
+.form h3{margin:0 0 6px}
+.form p{margin:0 0 12px; color:#64748b; font-weight:600; font-size:13px}
+.next{
+  margin-top:14px;
+  background:rgba(37,99,235,.05);
+  border:1px solid rgba(37,99,235,.22);
+  border-radius:14px;
+  padding:14px;
+}
+.next h4{margin:0 0 6px; font-size:13px}
+.next ol{margin:0; padding-left:18px; color:#475569; font-weight:700; font-size:13px}
+.full{width:100%; margin-top:14px; padding:14px 18px; border-radius:14px; border:none}
+.alert{padding:12px 14px; border-radius:12px; font-weight:800; margin:10px 0 14px; font-size:13px}
+.alert.success{background:rgba(34,197,94,.12); border:1px solid rgba(34,197,94,.25); color:#15803d}
+.alert.error{background:rgba(239,68,68,.10); border:1px solid rgba(239,68,68,.22); color:#b91c1c}
+
+@media(max-width:920px){
+  .contact-wrap{grid-template-columns:1fr}
+}
